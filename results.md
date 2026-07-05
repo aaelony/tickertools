@@ -10,12 +10,13 @@
 | just train-lstm AMZN | 5000   | 79.8% | 0.95  |
 | just train-rnn GOOG  | 5000   | 24.7% | 0.95  |
 | just train-lstm GOOG | 5000   | 24.7% | 0.95  |
-|                      |        |       |       |
+
 
 
 
 # just train-lstm AMZN
 
+```
  Training LSTM on device: Cpu
 Epoch    1 | train MSE 0.409596 | test MSE 0.244026 | acc   2.2%
 Epoch   10 | train MSE 0.144892 | test MSE 0.190202 | acc   2.5%
@@ -521,11 +522,11 @@ Epoch 5000 | train MSE 0.000106 | test MSE 0.002699 | acc  79.8%
 Trained Lstm on 6954 windows (seq_len 7).
 1287.88user 539.28system 1:24.38elapsed 2165%CPU (0avgtext+0avgdata 246872maxresident)k
 0inputs+8outputs (0major+100038681minor)pagefaults 0swaps
-
+```
 
 
 # just train-rnn AMZN
-
+```
 Training RNN on device: Cpu
 Epoch    1 | train MSE 8.803673 | test MSE 0.183929 | acc  12.0%
 Epoch   10 | train MSE 4.249763 | test MSE 0.133191 | acc  13.9%
@@ -1031,3 +1032,4 @@ Epoch 5000 | train MSE 0.000131 | test MSE 0.003693 | acc  72.2%
 Trained VanillaRnn on 6954 windows (seq_len 7).
 768.72user 75.19system 0:35.46elapsed 2379%CPU (0avgtext+0avgdata 127112maxresident)k
 0inputs+8outputs (0major+18437454minor)pagefaults 0swaps
+```
